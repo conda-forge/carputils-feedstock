@@ -3,7 +3,7 @@ schema_version: 1
 context:
   version: 18.1.0
   version_xy: ${{ (version | split('.'))[:2] | join('.') }}
-  build: 0
+  build: 1
 
 package:
   name: carputils
@@ -13,7 +13,6 @@ source:
   # carputils doesn't appear to make releases on its own repo
   # Could get version from big -inclSubmodules.zip release bundle
   # but rattler cannot unzip the zip file
-  
   # alternative (much smaller download, but bot won't autoupdate)
   # get version from submodule in opencarp release, e.g.
   # https://git.opencarp.org/openCARP/openCARP/-/tree/vX.Y/external
